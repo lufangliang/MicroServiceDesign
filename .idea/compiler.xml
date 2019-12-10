@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="book-trade-provider" />
+        <module name="book-trade-provider-api" />
+        <module name="book-user-provider" />
+        <module name="book-product-provider" />
+        <module name="book-order-provider" />
+        <module name="book-product-provider-api" />
+        <module name="book-order-provider-api" />
+        <module name="book-user-provider-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="book-order-provider" target="1.8" />
+      <module name="book-order-provider-api" target="1.8" />
+      <module name="book-product-provider" target="1.8" />
+      <module name="book-product-provider-api" target="1.8" />
+      <module name="book-trade-provider" target="1.8" />
+      <module name="book-trade-provider-api" target="1.8" />
+      <module name="book-user-provider" target="1.8" />
+      <module name="book-user-provider-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="book-order-provider" options="-parameters" />
+      <module name="book-order-provider-api" options="-parameters" />
+      <module name="book-product-provider" options="-parameters" />
+      <module name="book-product-provider-api" options="-parameters" />
+      <module name="book-trade-provider" options="-parameters" />
+      <module name="book-trade-provider-api" options="-parameters" />
+      <module name="book-user-provider" options="-parameters" />
+      <module name="book-user-provider-api" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/book-order-provider/book-order-provider.iml" filepath="$PROJECT_DIR$/book-order-provider/book-order-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-order-provider-api/book-order-provider-api.iml" filepath="$PROJECT_DIR$/book-order-provider-api/book-order-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-product-provider/book-product-provider.iml" filepath="$PROJECT_DIR$/book-product-provider/book-product-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-product-provider-api/book-product-provider-api.iml" filepath="$PROJECT_DIR$/book-product-provider-api/book-product-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-trade-provider/book-trade-provider.iml" filepath="$PROJECT_DIR$/book-trade-provider/book-trade-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-trade-provider-api/book-trade-provider-api.iml" filepath="$PROJECT_DIR$/book-trade-provider-api/book-trade-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-user-provider/book-user-provider.iml" filepath="$PROJECT_DIR$/book-user-provider/book-user-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-user-provider-api/book-user-provider-api.iml" filepath="$PROJECT_DIR$/book-user-provider-api/book-user-provider-api.iml" />
+    </modules>
+  </component>
+</project>

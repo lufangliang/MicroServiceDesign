@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="testTables" targetRuntime="MyBatis3">
+
+        <!--生成mapper.xml时覆盖原文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
+
+        <!--实现Serializable接口-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+
+        <!--生成toString方法-->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
+        <!--生成Equals HashCode方法-->
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
+
+        <commentGenerator>
+            <!-- 去除自动生成的注释-->
+            <property name="suppressAllComments" value="true"/>
+            <!-- 去除注释中的时间 -->
+            <property name="suppressDate" value="true"/>
+            <!-- 去除schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false"/>
+            <!-- 去除数据首尾空格 -->
+            <property name="trimStrings" value="true"/>
+        </commentGenerator>
+
+        <!--配置数据库连接 -->
+        <jdbcConnection
+                driverClass="com.mysql.cj.jdbc.Driver"
+                connectionURL="jdbc:mysql://106.54.109.227:3306/book-trade"
+                userId="lufangliang"
+                password="Lfl@921025!"/>
+
+        <!--默认将JDBC DECIMAL和NUMERIC类型解析为Integer，true时解析成BigDecimal-->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!--POJO实体类生成路径-->
+        <javaModelGenerator targetPackage="cn.itstudies.trade.pojo" targetProject="./src/main/java"/>
+
+        <!--XML映射文件生成路径 -->
+        <sqlMapGenerator targetPackage="cn.itstudies.trade.mapper" targetProject="./src/main/resources"/>
+
+        <!--mapper接口生成路径 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.itstudies.trade.mapper"
+                             targetProject="./src/main/java"/>
+
+        <!-- 指定需要自动生成的数据库表 -->
+        <table tableName="trade"/>
+    </context>
+
+</generatorConfiguration>
