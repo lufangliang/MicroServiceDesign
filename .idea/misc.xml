@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/book-order-provider-api/pom.xml" />
         <option value="$PROJECT_DIR$/book-trade-provider/pom.xml" />
         <option value="$PROJECT_DIR$/book-trade-provider-api/pom.xml" />
+        <option value="$PROJECT_DIR$/book-consumer/pom.xml" />
       </list>
     </option>
   </component>

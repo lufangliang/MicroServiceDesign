@@ -10,6 +10,7 @@
         <module name="book-trade-provider-api" />
         <module name="book-user-provider" />
         <module name="book-product-provider" />
+        <module name="book-consumer" />
         <module name="book-order-provider" />
         <module name="book-product-provider-api" />
         <module name="book-order-provider-api" />
@@ -17,6 +18,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="book-consumer" target="1.8" />
       <module name="book-order-provider" target="1.8" />
       <module name="book-order-provider-api" target="1.8" />
       <module name="book-product-provider" target="1.8" />
@@ -29,6 +31,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="book-consumer" options="-parameters" />
       <module name="book-order-provider" options="-parameters" />
       <module name="book-order-provider-api" options="-parameters" />
       <module name="book-product-provider" options="-parameters" />
